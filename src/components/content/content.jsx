@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from '/main_photo.png';
+import About from '../about/about';
 
 const content = () => {
     return (
@@ -12,19 +13,7 @@ const content = () => {
                 </div>
             </div>
 
-            <div className='container bg-mainColor min-h-96 rounded-xl shadow-xl p-3 md:p-6'>
-                <h2 className='text-white text-3xl font-bold border-b-4 rounded-sm border-blueColor'>Кто я и чем занимаюсь.</h2>
-                <ul className='container pl-4'>
-                    <li className='text-white list-disc'>Врач-косметолог в Клинике Бевз</li>
-                    <li className='text-white list-disc'>Терапевт, нутрициолог</li>
-                    <li className='text-white list-disc'>Мой опыт работы 17 лет</li>
-                    <li className='text-white list-disc'>Моя сфера профессиональных интересов - эндокринология, косметология, терапия</li>
-                    <li className='text-white list-disc'>Я создала и преподаю обучающие курсы для врачей "Школа акне ", "Школа пигментации", "Эндокринология красоты"</li>
-                    <li className='text-white list-disc'>Эксперт в проф.пилингах Harmony, Mahut, jesmed.ru , я знаю о них все и даже больше</li>
-                    <li className='text-white list-disc'>Постоянно учусь, совершенствую свои навыки и знания</li>
-                </ul>
-                <p className='text-white text-xl font-bold py-3'>Самое главное, я выбирала свою специальность душой, а это значит, что я на своём месте</p>
-            </div>
+            <About/>
 
             <div className='container bg-blueColor min-h-96 rounded-xl shadow-xl p-3 md:p-6'>
                 <h2 className='text-white text-3xl font-bold border-b-4 rounded-sm border-mainColor'>Косметология</h2>

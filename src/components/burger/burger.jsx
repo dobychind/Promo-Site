@@ -32,7 +32,7 @@ const Burger = () => {
             </nav>
 
             <div className={menu_class}>
-                <a href="#"><p className="text-white text-lg text-center w-auto hover:decoration-1, cursor-pointer">О себе</p></a>
+                <a href="about"><p className="text-white text-lg text-center w-auto hover:decoration-1, cursor-pointer">О себе</p></a>
                 <a href="#"><p className="text-white text-lg text-center w-auto hover:decoration-1, cursor-pointer">Направления</p></a>
                 <a href="#"><p className="text-white text-lg text-center w-auto hover:decoration-1, cursor-pointer">Обо мне</p></a>
             </div>

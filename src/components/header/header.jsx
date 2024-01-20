@@ -4,7 +4,7 @@ import tgLogo from "/tg.png"
 
 const header = () => {
     return (
-        <div className='container rounded-b-lg bg-mainColor py-4 px-3 flex space-between items-center md:px-6'>
+        <div className='container rounded-b-lg bg-mainColor py-4 px-3 flex space-between items-center md:px-6 md:rounded-none'>
             <Burger />
             <div className='flex items-center gap-3'>
                 <a href='https://t.me/Olgadobych'><img src={tgLogo} alt='Telegram logo'></img></a>
