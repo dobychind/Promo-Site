@@ -22,7 +22,7 @@ const Burger = () => {
     }
 
     return (
-        <div className="w-2/5">
+        <div className="w-3/5">
             <nav>
                 <div className="burger-menu" onClick={updateMenu}>
                     <div className={burger_class} ></div>
@@ -32,9 +32,12 @@ const Burger = () => {
             </nav>
 
             <div className={menu_class}>
-                <a href="about"><p className="text-white text-lg text-center w-auto hover:decoration-1, cursor-pointer">О себе</p></a>
-                <a href="#"><p className="text-white text-lg text-center w-auto hover:decoration-1, cursor-pointer">Направления</p></a>
-                <a href="#"><p className="text-white text-lg text-center w-auto hover:decoration-1, cursor-pointer">Обо мне</p></a>
+                <a href="about"><p className="text-white text-lg text-center w-auto hover:underline, cursor-pointer">О себе</p></a>
+                <a href="cosmetology"><p className="text-white text-lg text-center w-auto hover:underline, cursor-pointer">Косметология</p></a>
+                <a href="prevent"><p className="text-white text-lg text-center w-auto hover:underline, cursor-pointer">Превентивная медицина</p></a>
+                <a href="#"><p className="text-white text-lg text-center w-auto hover:underline, cursor-pointer">Школа Акне</p></a>
+                <a href="rewards"><p className="text-white text-lg text-center w-auto hover:underline, cursor-pointer">Достижения</p></a>
+                <a href="publications"><p className="text-white text-lg text-center w-auto hover:underline, cursor-pointer">Публикации</p></a>
             </div>
         </div>
     )

@@ -7,13 +7,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        mainColor: "#add8e6",
+        mainColor: "#e1e5f2",
         lightColor: "#e9ecef",
-        containerColor: "#f0f0f0",
-        blueColor: "#00B7FFA1"
+        blueColor: "#00B7FFA1",
+        secondaryColor: "#bfdbf7",
+        textColor: "#022b3a"
       },
       backgroundImage: {
-        'mainPhoto': "url('/public/main_photo.png')",
+        'mainPhoto': "url('/public/main_photo.jpg')",
+      },
+      minHeight: {
+        128: '33rem'
       }
     },
   },

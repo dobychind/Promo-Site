@@ -4,11 +4,11 @@ import tgLogo from "/tg.png"
 
 const header = () => {
     return (
-        <div className='container rounded-b-lg bg-mainColor py-4 px-3 flex space-between items-center md:px-6 md:rounded-none'>
+        <div className='container rounded-b-lg bg-lightColor py-4 px-3 flex space-between items-center md:px-6 md:rounded-none'>
             <Burger />
             <div className='flex items-center gap-3'>
-                <a href='https://t.me/Olgadobych'><img src={tgLogo} alt='Telegram logo'></img></a>
-                <p className='text-white text-3xl font-bold'>Ольга Добычина</p>
+                <a className='width-1/2 flex justify-end' href='https://t.me/Olgadobych'><img src={tgLogo} alt='Telegram logo'></img></a>
+                <div className='text-textColor w-fit text-end text-3xl font-bold'>Ольга Добычина</div>
             </div>
         </div>
     )
