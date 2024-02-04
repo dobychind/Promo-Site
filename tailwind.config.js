@@ -14,7 +14,8 @@ module.exports = {
         textColor: "#022b3a"
       },
       backgroundImage: {
-        'mainPhoto': "url('/public/main_photo.jpg')",
+        'mainPhoto': "url('/main_photo.jpg')",
+        'mainPhotoLand': "url('/main_photo_landscape-transformed.png')"
       },
       minHeight: {
         128: '33rem'

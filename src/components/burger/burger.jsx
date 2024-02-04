@@ -38,6 +38,7 @@ const Burger = () => {
                 <a href="#"><p className="text-white text-lg text-center w-auto hover:underline, cursor-pointer">Школа Акне</p></a>
                 <a href="rewards"><p className="text-white text-lg text-center w-auto hover:underline, cursor-pointer">Достижения</p></a>
                 <a href="publications"><p className="text-white text-lg text-center w-auto hover:underline, cursor-pointer">Публикации</p></a>
+                <a href="publications"><p className="text-white text-lg text-center w-auto hover:underline, cursor-pointer">Отзывы</p></a>
             </div>
         </div>
     )

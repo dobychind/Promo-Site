@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import Header from './components/header/header';
-import Footer from './components/foooter/footer';
 import Content from './components/content/content';
 import "./index.css";
 import 'tailwindcss/tailwind.css';
@@ -15,7 +14,6 @@ function App() {
       <body className='container mx-auto flex flex-col'>
         <Header></Header>
         <Content></Content>
-        <Footer></Footer>
       </body>
     </>
   )
