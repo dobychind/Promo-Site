@@ -2,6 +2,8 @@ import React from 'react'
 import About from '../about/about';
 import CosmetologySwipe from '../slider/CosmetologySwipe';
 import Feedback from '../feedback/Feedback';
+import PrevAccordeon from '../preventMedicine/PrevAccordeon';
+import AkneAcc from '../akne/akneAccordion'
 
 const content = () => {
     return (
@@ -29,16 +31,10 @@ const content = () => {
                 <h2 className='text-textColor text-3xl font-bold rounded-sm'>Превентивная медицина</h2>
                 <div className='h-1 border-b-4 pb-2 mb-2 border-blueColor'></div>
                 {/* Аккореон "что это" */}
-                <div className='text-xl  flex-col flex h-auto border rounded-xl p-2 text-textColor font-semibold'>Основная цель превентивной медицины - профилактика любого заболевания  и сохранение активного долголетия.
-                    <ul className='py-2'>
-                        <li className='font-bold'>-это качество вашей жизни</li>
-                        <li className='font-bold'>-это ваше хорошее самочувствие</li>
-                        <li className='font-bold'>-высокий уровень энергии</li>
-                    </ul>
-                    {/* Аккордеон "Для кого подойдет" */}
-                </div>
+                <PrevAccordeon/>
+                
                 <div className='text-xl flex h-auto justify-center items-center py-2 text-textColor font-semibold'>               
-                     <a className='w-full' href='https://t.me/Olgadobych'><button className='bg-blueColor w-full rounded-xl py-1 px-2 text-white'>Записаться на консультацию</button></a>
+                     <a className='w-full' href='https://t.me/Olgadobych'><button className='bg-blueColor w-full rounded-xl py-2 px-3 text-white'>Записаться на консультацию</button></a>
                 </div>
 
 
@@ -47,26 +43,10 @@ const content = () => {
             <div id='AkneSchool' className='container bg-white min-h-96 rounded-xl shadow-xl p-3 md:p-6 md:w-[49%]'>
                 <h2 className='text-textColor text-3xl font-bold rounded-sm'>Школа Акне</h2>
                 <div className='h-1 border-b-4 pb-2 border-blueColor'></div>
-                <div className='flex flex-col p-2 gap-2'>
-                    <p className='text-xl items-center justify-center flex h-auto  text-textColor font-semibold'><b classname="">Обучение для врачей, косметологов-эстетистов </b></p>
-                    {/* Добавить аккодеон "Что это? */}
-                    <div className='text-xl  flex-col flex h-auto border rounded-xl p-2 text-textColor font-semibold'>Интегративная школа акне включает в себя самые актуальные данные по
-                        <ul className='pt-2'>
-                            <li className='font-bold'>-классификации</li>
-                            <li className='font-bold'>-этиологии</li>
-                            <li className='font-bold'>-патогенезу</li>
-                        </ul>
-                    </div>
-                    {/* Добавить аккордеон "Что вас ждет" */}
-                    <p className='text-xl items-center  flex h-auto border rounded-xl p-2 text-textColor font-semibold'>Диета при акне
-                        <br />Нутрицевтическая коррекция
-                        <br />Аптечные средства
-                        <br />Протоколы лечения акне
-                    </p>
-                </div>
+                <AkneAcc/>
             </div>
 
-            <div id='rewards' className='container bg-white  rounded-xl shadow-xl p-3 md:p-6 md:w-1/3'>
+            <div id='rewards' className='container bg-white  rounded-xl shadow-xl p-3 md:p-6 md:w-[32%]'>
                 <h2 className='text-textColor text-3xl font-bold rounded-sm'>Достижения</h2>
                 <div className='h-1 border-b-4 pb-2 border-blueColor' />
                 <div className='flex flex-col p-2 gap-2'>
@@ -75,7 +55,7 @@ const content = () => {
                 </div>
             </div>
 
-            <div id='publications' className='container bg-white rounded-xl shadow-xl p-3 md:p-6 md:w-1/3'>
+            <div id='publications' className='container bg-white rounded-xl shadow-xl p-3 md:p-6 md:w-[32%]'>
                 <h2 className='text-textColor text-3xl font-bold rounded-sm'>Публикации в журналах</h2>
                 <div className='h-1 border-b-4 pb-2 border-blueColor'></div>
                 <div className='flex flex-col p-2 gap-2'>
@@ -86,7 +66,7 @@ const content = () => {
 
 
 
-            <div id='feedback' className='container bg-white rounded-xl shadow-xl md:w-[30%]'>
+            <div id='feedback' className='container bg-white rounded-xl shadow-xl md:w-[32%]'>
                 <h2 className='text-textColor text-3xl font-bold p-3 pb-0 md:p-6 md:pb-0 rounded-sm'>Отзывы на продокторов</h2>
                 <div className='h-1 border-b-4 pb-2 px-3 border-blueColor'></div>
                 <Feedback />

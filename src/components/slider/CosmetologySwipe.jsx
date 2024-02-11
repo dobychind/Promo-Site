@@ -52,7 +52,7 @@ const CosmetologySwipe = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className=''>
-                    <img src="nutriciologi.jpg" alt='nutriciology' className='rounded-xl min-h-56'/>
+                    <img src="nutri.jpg" alt='nutriciology' className='rounded-xl min-h-56'/>
                     <div>
                         <p className='text-xl text-center items-center justify-center text-textColor font-semibold'>Нутрициология</p>
                     </div>      
