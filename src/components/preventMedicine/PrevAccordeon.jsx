@@ -28,8 +28,8 @@ const PrevAccordeon = () => {
             </AccordionItem>
 
             <AccordionItem className="szh-accordion__item-content text-xl flex-col flex h-auto border rounded-xl p-2 text-textColor font-semibold " header={<p className='hover:text-blueColor text-start'>Как записаться на консультацию?</p>}>
-                Suspendisse massa risus, pretium id interdum in, dictum sit
-                amet ante. Fusce vulputate purus sed tempus feugiat.
+                <p className='ml-5 text-base
+                 font-medium text-start'>Запись на консультацию производится через телешрам, перейти можно по кнопке ниже</p>
             </AccordionItem>
         </Accordion>
     )

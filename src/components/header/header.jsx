@@ -6,10 +6,12 @@ const header = () => {
     return (
         <div className='container rounded-b-lg bg-white py-4 px-3 flex space-between items-center md:px-6 md:rounded-none'>
             <Burger />
-            <div className='flex items-center gap-3'>
-                <a className='width-1/2 flex justify-end' href='https://t.me/Olgadobych'><img src={tgLogo} alt='Telegram logo'></img></a>
-                <div className='text-textColor w-fit text-end text-3xl font-bold'>Ольга Добычина</div>
-            </div>
+
+            <div className='text-textColor items-center ml-4 flex gap-3 w-fit text-end text-3xl font-bold md:ml-auto'>
+                Ольга Добычина
+                <a href='https://t.me/Olgadobych'><img src={tgLogo} alt='Telegram logo'></img></a>
+                </div>
+
         </div>
     )
 }

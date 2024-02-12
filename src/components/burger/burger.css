@@ -1,85 +1,69 @@
-
-
-
-* {
-    margin: 0;
-    box-sizing: border-box;
-}
-
-/* ---------------- Navbar and burger menu ------------------ */
-nav {
-    width: 100%;
-    height: 3em;
-    display: flex;
-    justify-content: flex-start;
-    /* padding: 1em 0; */
-}
-
-.burger-menu {
+.bm-burger-button {
+    position: sticky;
+    width: 36px;
+    height: 30px;
+    left: 36px;
+    top: 36px;
+  }
+  
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: #373a47;
+  }
+  
+  /* Color/shape of burger icon bars on hover*/
+  .bm-burger-bars-hover {
+    background: #a90000;
+  }
+  
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 36px;
+    width: 36px;
+  }
+  
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #bdc3c7;
+  }
+  
+  /*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+  .bm-menu-wrap {
+    position: fixed;
     height: 100%;
-    width: 4em;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    cursor: pointer;
-}
-
-.burger-bar {
-    width: 4em;
-    height: 0.5em;
-    background-color: rgb(0, 183, 255);
-    border-radius: 0.5em;
-}
-
-
-.menu {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    width: 50%;
-    padding: 12px 16px;
-    background-color: rgb(154, 181,240);
-    position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
-    margin-top: 6em;
-    border-bottom-right-radius: 12px;
-
-}
-
-/* ------------- sliding menu ------------------ */
-.hidden {
-    display: none;
-}
-
-
-.visible {
-    display: flex;
-    flex-direction: column;
-    z-index: 1000;
-}
-
-/* ----- animations--------- */
-/* clicked */
-.burger-bar.clicked:nth-child(1){
-    transform: rotate(45deg) translate(0.75em, 1.25em);
-    transition: ease-out 0.5s;
-}
-
-.burger-bar.clicked:nth-child(2){
-    transform: scale(0.1);
-    transition: ease-out 0.5s;
-}
-
-.burger-bar.clicked:nth-child(3){
-    transform: rotate(135deg) translate(-0.5em, 1em);
-    transition: ease-out 0.5s;
-}
-
-/* unclicked */
-.burger-bar.unclicked {
-    transform: rotate(0) translate(0);
-    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
-}
+  }
+  
+  /* General sidebar styles */
+  .bm-menu {
+    background: #373a47;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+  }
+  
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+  
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+  }
+  
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+  }
+  
+  /* Styling of overlay */
+  .bm-overlay {
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.3);
+  }

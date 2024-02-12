@@ -1,47 +1,22 @@
-import React, { useState } from "react";
+import React from 'react'
+import { bubble as Menu } from 'react-burger-menu';
 import './burger.css'
 
-const Burger = () => {
 
-    // to change burger classes
-    const [burger_class, setBurgerClass] = useState("burger-bar unclicked")
-    const [menu_class, setMenuClass] = useState("menu hidden")
-    const [isMenuClicked, setIsMenuClicked] = useState(false)
-
-    // toggle burger menu change
-    const updateMenu = () => {
-        if (!isMenuClicked) {
-            setBurgerClass("burger-bar clicked")
-            setMenuClass("menu visible")
-        }
-        else {
-            setBurgerClass("burger-bar unclicked")
-            setMenuClass("menu hidden")
-        }
-        setIsMenuClicked(!isMenuClicked)
-    }
-
+const burger = () => {
     return (
-        <div className="w-3/5">
-            <nav>
-                <div className="burger-menu" onClick={updateMenu}>
-                    <div className={burger_class} ></div>
-                    <div className={burger_class} ></div>
-                    <div className={burger_class} ></div>
-                </div>
-            </nav>
-
-            <div className={menu_class}>
-                <a href="about"><p className="text-white text-lg text-center w-auto hover:underline, cursor-pointer">О себе</p></a>
-                <a href="cosmetology"><p className="text-white text-lg text-center w-auto hover:underline, cursor-pointer">Косметология</p></a>
-                <a href="prevent"><p className="text-white text-lg text-center w-auto hover:underline, cursor-pointer">Превентивная медицина</p></a>
-                <a href="#"><p className="text-white text-lg text-center w-auto hover:underline, cursor-pointer">Школа Акне</p></a>
-                <a href="rewards"><p className="text-white text-lg text-center w-auto hover:underline, cursor-pointer">Достижения</p></a>
-                <a href="publications"><p className="text-white text-lg text-center w-auto hover:underline, cursor-pointer">Публикации</p></a>
-                <a href="publications"><p className="text-white text-lg text-center w-auto hover:underline, cursor-pointer">Отзывы</p></a>
-            </div>
+        <div>
+            <Menu>
+                <a className="menu-item" href="#about">О себе</a>
+                <a className="menu-item" href="#cosmetology">Косметология</a>
+                <a className="menu-item" href="#prevent">Превентивная медицина</a>
+                <a className="menu-item" href="#AkneSchool">Школа Акне</a>
+                <a className="menu-item" href="#rewards">Достижения</a>
+                <a className="menu-item" href="#publications">Публикации</a>
+                <a className="menu-item" href="#feedback">Отзывы</a>
+            </Menu>
         </div>
     )
 }
 
-export default Burger
+export default burger

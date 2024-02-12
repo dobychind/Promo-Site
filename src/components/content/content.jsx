@@ -7,7 +7,7 @@ import AkneAcc from '../akne/akneAccordion'
 
 const content = () => {
     return (
-        <div className='container flex flex-col gap-4 bg-white px-3 py-4 md:px-6 md:flex-wrap md:flex-row'>
+        <div id='about' className='container flex flex-col gap-4 bg-white px-3 py-4 md:px-6 md:flex-wrap md:flex-row'>
 
             <div className='container flex bg-mainPhoto bg-cover bg-no-repeat min-h-128 bg-center rounded-xl shadow-xl z-10 p-3 relative md:p-6 md:bg-contain md:bg-mainPhotoLand md:bg-right'>
                 <div className='flex rounded-xl'>
@@ -18,7 +18,7 @@ const content = () => {
 
             <About />
 
-            <div id='cosmetology' className='container bg-white rounded-xl shadow-xl p-3 md:p-6 md:w-[49%]'>
+            <div id='cosmetology' className='container bg-white rounded-xl shadow-xl p-3 md:p-6 md:w-[48%]'>
                 <h2 className='text-textColor text-3xl font-bold rounded-sm'>Косметология</h2>
                 <div className='h-1 border-b-4 pb-2 border-blueColor'></div>
                 <div className='flex flex-col gap-2'>
@@ -27,7 +27,7 @@ const content = () => {
                 </div>
             </div>
 
-            <div id='prevent' className='container bg-white min-h-96 rounded-xl shadow-xl p-3 md:p-6 md:w-[49%]'>
+            <div id='prevent' className='container bg-white min-h-96 rounded-xl shadow-xl p-3 md:p-6 md:w-[48%]'>
                 <h2 className='text-textColor text-3xl font-bold rounded-sm'>Превентивная медицина</h2>
                 <div className='h-1 border-b-4 pb-2 mb-2 border-blueColor'></div>
                 {/* Аккореон "что это" */}
@@ -40,13 +40,13 @@ const content = () => {
 
             </div>
 
-            <div id='AkneSchool' className='container bg-white min-h-96 rounded-xl shadow-xl p-3 md:p-6 md:w-[49%]'>
+            <div id='AkneSchool' className='container bg-white min-h-96 rounded-xl shadow-xl p-3 md:p-6 md:w-[48%]'>
                 <h2 className='text-textColor text-3xl font-bold rounded-sm'>Школа Акне</h2>
                 <div className='h-1 border-b-4 pb-2 border-blueColor'></div>
                 <AkneAcc/>
             </div>
 
-            <div id='rewards' className='container bg-white  rounded-xl shadow-xl p-3 md:p-6 md:w-[32%]'>
+            <div id='rewards' className='container bg-white  rounded-xl shadow-xl p-3 md:p-6 md:w-[48%]'>
                 <h2 className='text-textColor text-3xl font-bold rounded-sm'>Достижения</h2>
                 <div className='h-1 border-b-4 pb-2 border-blueColor' />
                 <div className='flex flex-col p-2 gap-2'>
@@ -55,7 +55,7 @@ const content = () => {
                 </div>
             </div>
 
-            <div id='publications' className='container bg-white rounded-xl shadow-xl p-3 md:p-6 md:w-[32%]'>
+            <div id='publications' className='container bg-white rounded-xl shadow-xl p-3 md:p-6 md:w-[48%]'>
                 <h2 className='text-textColor text-3xl font-bold rounded-sm'>Публикации в журналах</h2>
                 <div className='h-1 border-b-4 pb-2 border-blueColor'></div>
                 <div className='flex flex-col p-2 gap-2'>
@@ -66,7 +66,7 @@ const content = () => {
 
 
 
-            <div id='feedback' className='container bg-white rounded-xl shadow-xl md:w-[32%]'>
+            <div id='feedback' className='container bg-white rounded-xl shadow-xl md:w-full'>
                 <h2 className='text-textColor text-3xl font-bold p-3 pb-0 md:p-6 md:pb-0 rounded-sm'>Отзывы на продокторов</h2>
                 <div className='h-1 border-b-4 pb-2 px-3 border-blueColor'></div>
                 <Feedback />
