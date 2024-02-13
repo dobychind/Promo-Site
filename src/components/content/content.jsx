@@ -9,7 +9,7 @@ const content = () => {
     return (
         <div id='about' className='container flex flex-col gap-4 bg-white px-3 py-4 md:px-6 md:flex-wrap md:flex-row'>
 
-            <div className='container flex bg-mainPhoto bg-cover bg-no-repeat min-h-128 bg-center rounded-xl shadow-xl z-10 p-3 relative md:p-6 md:bg-contain md:bg-mainPhotoLand md:bg-right'>
+            <div className='container flex bg-mainPhoto bg-cover bg-no-repeat min-h-128 bg-center rounded-xl shadow-xl z-10 p-3 relative md:p-6  md:bg-mainPhotoLand md:bg-right'>
                 <div className='flex rounded-xl'>
                     <p className='w-4/5 mt-auto text-white text-2xl font-bold z-10 relative md:text-3xl md:my-auto'>Врач Добычина Ольга Александровна</p>
                     <div className='bg-gray-700	 opacity-30 absolute w-full h-full rounded-xl  opacity-1	 left-0 top-0 z-0' />
